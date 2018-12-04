@@ -8,7 +8,7 @@ Predicting time series data is a common problem in many domains, one of which is
 
 Our dataset consists of stock data from Yahoo Finance. They provide the Open, High, Low, Close, Volume, and Adjusted Close values for the symbols AAPL, AMZN, FB, GOOG, and SPY from January 1st, 2010 to present day (November 23rd, 2018 at the time of running). The training data consists of the Open, High, Low, Volume, and Adjusted Close values for AAPL, normalized with a 90/10 training/testing split.
 
-We fed this data into a Long Short-Term Memory network (LSTMs), which are the go-to model for sequence analysis. Specifically, we used two stacked LSTMs (the output of the first LSTM is the input for the second) 256 units each, with 30% dropout and a final fully-connected layer with mean-squared error as the loss function. In order to test our model, we write a simple agent that buys/sells based on the predicted momentum of the market (a technical indicator).
+We fed this data into a Long Short-Term Memory network (LSTMs), which are the go-to model for sequence analysis. Specifically, we used two stacked LSTMs (the output of the first LSTM is the input for the second) 256 units each, with 30% dropout and a final fully-connected layer with mean-squared error as the loss function. We use keras' for a very concise implementation of our model, as LSTMs are already implemented. In order to test our model, we write a simple agent that buys/sells based on the predicted momentum of the market (a technical indicator).
 
 ![Image](lstm.png)
 (Obligatory image from colah's blog)
