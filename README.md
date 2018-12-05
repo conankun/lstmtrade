@@ -1,5 +1,5 @@
 ## Time Series Forecasting for Stock Data using LSTMs
-
+By Junghyun Kim, Yoonwoo Kim, and Jiseok Choi
 ### Introduction
 
 Predicting time series data is a common problem in many domains, one of which is the stock market. In order to send profitable buy/sell signals, it is necessary to accurately predict the movement of the market. Currently, most approaches are based on technical indicators, which suffer from time lag. We attempt to build a model that accomplishses this task and test whether or not it is able to earn a profit. If the experiment is successful, this provides a way to reliably earn money from the stock market in an automated way.
